@@ -65,3 +65,33 @@ public class Animal {
 	This is a Javadoc multiple-line comment
 	@author Max Tiessler Aguirre
 */
+
+
+/* ------------- 1.3 - Classes vs Files ---------- */
+
+/*
+	Each java class is defined by its own *.java file.
+
+	It is usually public --> Java does not require it. You can just
+*/
+
+	class Animal {
+		String name; 
+	}
+
+/*
+	You can put two classes in the same file. 
+	At most, one of the classes in the file is allowed to be public.
+*/
+
+	public class Animal {
+		String name; 
+	}
+	class Animal2 {
+		String name; 
+	}
+
+/*
+	If you have a PUBLIC class => it must match the filename
+		- public class Animal2 would not compile in a file named Animal.java
+*/
